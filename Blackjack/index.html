@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Blackjack</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <div class="gameHead">BLACKJACK</div>
+        <div class="score" id="dealerScore">Dealer Score:</div>
+        <div class="score" id="playerScore">Player Score:</div>
+        <div class="buttonHolder" id="buttonHolder1">
+            <div class="button" id="restart">Restart</div>
+            <div class="button" id="hitme">Hit Me</div>
+            <div class="button" id="stand">Stand</div>
+            <div class="button" id="split">Split</div>
+            <div class="button" id="howto">How To</div>
+        </div>
+        <div class="allGames">
+            <div class="game">
+                <div class="gameBody">
+                    <div class="hand" id="dealerHand"></div>
+                    <div class="dealerTotal"></div>
+                    <div class="playerHandHolder">
+                        <div class="hand" id="playerHand1"></div>
+                        <div class="hand" id="playerHand2"></div>
+                    </div>
+                    <div class="playerTotalHolder">
+                        <div class="playerTotal" id="playerTotal1"></div>
+                        <div class="playerTotal" id="playerTotal2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buttonHolder" id="buttonHolder0">
+            <div class="button" id="deal">Deal</div>
+            <div class="start-text">Press DEAL to start the game</div>
+        </div>
+        <div class="mask">
+            <div class="roundOverWindow">
+                <div class="roundOverHead"></div>
+                <div class="roundOverBody">
+                    <div class="button" id="newround">New Round</div>
+                </div>
+            </div>
+        </div>
+        <div class="instructions">
+            <h1>Instructions</h1>
+            <div class="instructions-body">
+                The cards are dealt to the player and to the dealer<br>
+                One of the dealers cards is flipped downv
+                The goal of the game is to get as close to 21 withouth going over<br>
+                The player has to option to get another card by clicking the "Hit Me" button<br>
+                By clicking the "Stand" button the dealers card is revealed and whoever is closer to 21 without going over wins<br>
+                When calculating the total the card values are calculated in the following manner:<br>
+                Ace: 1 or 11<br>
+                2-9: Their value<br>
+                10,Jack,Queen,King: 10<br>
+                If the first two cards are worth the same the player wil be given a "Split" button<br>
+                Clicking that will split the players hand into two independant hands each with one of the original cards and each hand will receive one more card<br>
+            </div>
+            <div class="button" id="howtoback">Back</div>
+        </div>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
